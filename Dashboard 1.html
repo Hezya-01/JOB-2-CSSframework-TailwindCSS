@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard - SmartIoT</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-image: url('./Background.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+  
+</head>
+<body class="font-sans text-gray-800">
+  <div class="bg-white p-8 md:p-12 rounded-lg shadow-lg max-w-4xl w-full text-center mx-auto" style="position: relative; z-index: 10;">
+    <h1 class="text-4xl font-bold mb-2 text-gray-700">Dashboard</h1>
+    <p class="text-lg text-gray-600 mb-8">Monitor & Kontrol Turbin Angin</p>
+
+    <h3 class="text-xl font-semibold mb-6 text-gray-700">Data Sensor</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+      <div class="bg-gray-100 p-6 rounded-lg shadow-md flex flex-col items-center">
+        <p class="text-lg font-medium mb-2 text-gray-600">Kecepatan Angin</p>
+        <p id="kecepatan angin" class="text-4xl font-bold text-blue-600">0.00 m/s</p>
+      </div>
+      <div class="bg-gray-100 p-6 rounded-lg shadow-md flex flex-col items-center">
+        <p class="text-lg font-medium mb-2 text-gray-600">Arah Angin</p>
+        <p id="arah angin" class="text-4xl font-bold text-green-600">0 °</p>
+      </div>
+      <div class="bg-gray-100 p-6 rounded-lg shadow-md flex flex-col items-center">
+        <p class="text-lg font-medium mb-2 text-gray-600">Kecepatan Rotor</p>
+        <p id="kecepatan rotor" class="text-4xl font-bold text-purple-600">0 RPM</p>
+      </div>
+    </div>
+
+    <h3 class="text-xl font-semibold mb-6 text-gray-700">Kontrol Sistem</h3>
+    <div class="flex flex-wrap justify-center gap-4 mb-8">
+      <button id="led1" onclick="toggleLED(1)" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-md transition duration-300 ease-in-out">
+        LED 1 OFF
+      </button>
+      <button id="led2" onclick="toggleLED(2)" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-md transition duration-300 ease-in-out">
+        LED 2 OFF
+      </button>
+      <button id="brake" onclick="toggleBrake()" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-md transition duration-300 ease-in-out">
+        REM OFF
+      </button>
+    </div>
+
+    <h3 class="text-xl font-semibold mb-4 text-gray-700">Log Aktivitas</h3>
+    <div id="activity-log" class="bg-gray-100 p-6 rounded-lg text-left border border-gray-200"></div>
+  </div>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>

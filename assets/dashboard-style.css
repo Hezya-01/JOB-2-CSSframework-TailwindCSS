@@ -1,0 +1,83 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-image: url("Background\ Login.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.dashboard {
+  max-width: 800px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  text-align: center;
+  color: #333;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.cards, .controls {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: Horizontal;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: #f4f4f4;
+  padding: 15px;
+  border-radius: 6px;
+  text-align: horizontal;
+  flex: 1;
+  min-width: 100px;
+}
+
+.card h3 {
+  margin: 5px 5px 5px;
+  font-size: 14px;
+}
+
+.card p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #003a61;
+}
+
+.controls button {
+  width: 140px;         
+  padding: 10px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  background: #3cb6db;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.controls button:hover {
+  background: #3cb6db;
+}
+
+.log {
+  background: #fafafa;
+  border-left: 4px solid #3498db;
+  padding: 10px;
+  font-family: monospace;
+  font-size: 13px;
+  max-height: 120px;
+  overflow-y: auto;
+}
