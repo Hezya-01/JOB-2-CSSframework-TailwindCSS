@@ -9,7 +9,7 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
   const validPassword = "123456";
 
   if (username === validUsername && password === validPassword) {
-    window.location.href = "Dashboard 1.html";
+    window.location.href = "dashboard.html";
   } else {
     errorElement.textContent = "Username atau password salah!";
   }
